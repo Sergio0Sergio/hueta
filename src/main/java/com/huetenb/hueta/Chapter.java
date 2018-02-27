@@ -10,11 +10,20 @@ public class Chapter {
 	
 	@Id
 	private String id;
+	
 	private String name;
 	
 	public Chapter (String name) {
 		
-		this.name = name;
+		this.setName(name);
 		
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 }
